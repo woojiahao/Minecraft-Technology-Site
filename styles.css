@@ -1,0 +1,122 @@
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(white, #fff1e2);
+  transform: translateY(-75px);
+}
+
+/* PRELOADER FADE */
+#preloader.hidden {
+  opacity: 0;
+}
+#preloader::before,
+#preloader::after {
+animation: load 3s infinite alternate ease-in-out;
+}
+#preloader::before {
+  top: 0;
+}
+#preloader::after {
+  bottom: 0;
+}
+@keyframes load {
+  0% {
+    left: 0;
+    height: 30px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 40px;
+  }
+  100% {
+    left: 235px;
+    height: 30px;
+    width: 15px;
+  }
+}
+.content {
+  display: none;
+}
+
+/* PRELOADER CONFIG */
+.loader {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotate(45deg);
+}
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background: green;
+  box-shadow: 187.5px 187.5px 20px #cecdcc;
+  animation: move 4.5s ease-in-out infinite both;
+  transform-style: preserve-3d;
+}
+.box:nth-child(1) {
+  animation-delay: -2.25s;
+}
+.box:nth-child(2) {
+  animation-delay: -4.5s;
+}
+.box:nth-child(3) {
+  animation-delay: -6.75s;
+}
+.box:before, .box:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+.box:before {
+  top: 100%;
+  left: 0;
+  background: #5b3104;
+  transform-origin: center top;
+  transform: rotateX(-90deg);
+}
+.box:after {
+  top: 0;
+  left: 100%;
+  background: #5b3104;
+  transform-origin: center left;
+  transform: rotateY(90deg);
+}
+@keyframes move {
+  0%, 100% {
+    transform: none;
+  }
+  12.5% {
+    transform: translate(50px, 0);
+  }
+  25% {
+    transform: translate(100px, 0);
+  }
+  37.5% {
+    transform: translate(100px, 50px);
+  }
+  50% {
+    transform: translate(100px, 100px);
+  }
+  62.5% {
+    transform: translate(50px, 100px);
+  }
+  75% {
+    transform: translate(0, 100px);
+  }
+  87.5% {
+    transform: translate(0, 50px);
+  }
+}
