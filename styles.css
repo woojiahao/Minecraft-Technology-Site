@@ -5,8 +5,11 @@ overflow-y: hidden;
 }
 
 body{
-background-image: url("background.png");
-background-repeat: no-repeat;
+  background: url("background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 font-family: 'Raleway', sans-serif;
 }
 
@@ -101,13 +104,12 @@ ul.topnav li.right {float: right;}
 }
 
 
-/* PRELOADER FADE */
+/* PRELOADER STUFF */
 .preload {
-  background: radial-gradient(white, #efe1bf);
-  transform: translateY(-75px);
-  justify-content: center;
-  align-items: center;
-  display:flex;
+    background: url("background.png") no-repeat center center fixed;
+  color: white;
+  text-align: center;
+  padding: 20%;
 }
 #preloader.hidden {
   opacity: 0;
@@ -141,86 +143,69 @@ animation: load 3s infinite alternate ease-in-out;
 .content {
   display: none;
 }
-#ender{
-  max-width: 20%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
+.loading span {
+  display: inline-block;
+  vertical-align: middle;
+  width: .6em;
+  height: .6em;
+  margin: .19em;
+  background: #007DB6;
+  border-radius: .6em;
+  -webkit-animation: loading 1s infinite alternate;
+          animation: loading 1s infinite alternate;
+}
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading span:nth-of-type(2) {
+  background: #008FB2;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+.loading span:nth-of-type(3) {
+  background: #009B9E;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+.loading span:nth-of-type(4) {
+  background: #00A77D;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+.loading span:nth-of-type(5) {
+  background: #00B247;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.loading span:nth-of-type(6) {
+  background: #5AB027;
+  -webkit-animation-delay: 1.0s;
+          animation-delay: 1.0s;
+}
+.loading span:nth-of-type(7) {
+  background: #A0B61E;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
 }
 
-/* PRELOADER CONFIG */
-.loader {
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: 150px;
-  height: 150px;
-  transform-style: preserve-3d;
-  transform: rotateX(45deg) rotate(45deg);
-}
-.box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 50px;
-  background: green;
-  box-shadow: 187.5px 187.5px 20px #cecdcc;
-  animation: move 4.5s ease-in-out infinite both;
-  transform-style: preserve-3d;
-}
-.box:nth-child(1) {
-  animation-delay: -2.25s;
-}
-.box:nth-child(2) {
-  animation-delay: -4.5s;
-}
-.box:nth-child(3) {
-  animation-delay: -6.75s;
-}
-.box:before, .box:after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-}
-.box:before {
-  top: 100%;
-  left: 0;
-  background: #5b3104;
-  transform-origin: center top;
-  transform: rotateX(-90deg);
-}
-.box:after {
-  top: 0;
-  left: 100%;
-  background: #5b3104;
-  transform-origin: center left;
-  transform: rotateY(90deg);
-}
-@keyframes move {
-  0%, 100% {
-    transform: none;
+/*
+ * Animation keyframes
+ * Use transition opacity instead of keyframes?
+ */
+@-webkit-keyframes loading {
+  0% {
+    opacity: 0;
   }
-  12.5% {
-    transform: translate(50px, 0);
+  100% {
+    opacity: 1;
   }
-  25% {
-    transform: translate(100px, 0);
+}
+@keyframes loading {
+  0% {
+    opacity: 0;
   }
-  37.5% {
-    transform: translate(100px, 50px);
-  }
-  50% {
-    transform: translate(100px, 100px);
-  }
-  62.5% {
-    transform: translate(50px, 100px);
-  }
-  75% {
-    transform: translate(0, 100px);
-  }
-  87.5% {
-    transform: translate(0, 50px);
+  100% {
+    opacity: 1;
   }
 }
