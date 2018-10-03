@@ -1,16 +1,68 @@
 
 html, body {
   height: 100%;
-}
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(white, #fff1e2);
-  transform: translateY(-75px);
+overflow-y: hidden;
 }
 
+body{
+background-image: url("background.png");
+background-repeat: no-repeat;
+}
+
+#topLogo{
+max-width: 25%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: block;
+}
+
+ul.topnav {
+  width: 100%;
+      display: inline-block;
+      text-align: center;
+      padding: 0;
+      list-style: none;
+      opacity: .85;
+      border-top: 2.2px solid black;
+      border-bottom: 2.2px solid black;
+      margin-left: 0px;
+
+}
+
+ul.topnav li {
+  display: inline-block;
+text-align:center;
+}
+
+ul.topnav li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color:black;
+}
+
+
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+
 /* PRELOADER FADE */
+.preload {
+  background: radial-gradient(white, #efe1bf);
+  transform: translateY(-75px);
+  justify-content: center;
+  align-items: center;
+  display:flex;
+}
+
 #preloader.hidden {
   opacity: 0;
 }
