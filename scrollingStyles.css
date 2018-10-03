@@ -3,8 +3,11 @@ html, body {
 }
 
 body{
-background-image: url("background.png");
-background-repeat: repeat;
+background: url("background.png") no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 font-family: Gill Sans, Gill Sans MT, Calibri,sans-serif;
 }
 
@@ -117,7 +120,14 @@ ul.topnav li.right {float: right;}
  opacity: 1;
 }
 
+#team {
+    transition:transform 0.25s ease;
+}
 
+#team:hover {
+    -webkit-transform:scale(2.5); /* or some other value */
+    transform:scale(2.5);
+}
 /* PRELOADER FADE */
 .preload {
   background: radial-gradient(white, #efe1bf);
