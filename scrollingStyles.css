@@ -37,7 +37,7 @@ ul.topnav {
 ul.topnav li {
   display: inline-block;
   text-align:center;
-  font-weight: bolder;
+  -webkit-text-stroke: 1px white;
 }
 ul.topnav li a {
     display: block;
