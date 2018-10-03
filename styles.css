@@ -14,13 +14,13 @@ font-family: Gill Sans, Gill Sans MT, Calibri,sans-serif;
 max-width: 25%;
 }
 
+/* Navigation Bar */
 .center {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     display: block;
 }
-
 ul.topnav {
   width: 100%;
       display: inline-block;
@@ -33,12 +33,10 @@ ul.topnav {
       margin-left: 0px;
 
 }
-
 ul.topnav li {
   display: inline-block;
 text-align:center;
 }
-
 ul.topnav li a {
     display: block;
     text-align: center;
@@ -46,12 +44,49 @@ ul.topnav li a {
     text-decoration: none;
     color:black;
 }
-
-
 ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
+}
+
+/* Home Page */
+
+/* Skin Changer Page */
+
+/* AeroChecker Page */
+
+/* Contact Page */
+#contact{
+  background-color: black;
+  opacity: .8;
+  border-top: 2.2px solid black;
+  border-bottom: 2.2px solid black;
+  margin:auto;
+  width: 60%;
+  text-align: center;
+}
+#dog{
+  max-width: 10%;
+  opacity: 1;
+}
+.font{
+  color:white;
+  opacity: 1;
+}
+/* Terms Page */
+#terms{
+  background-color: black;
+  opacity: .8;
+  border-top: 2.2px solid black;
+  border-bottom: 2.2px solid black;
+  margin:auto;
+  width: 60%;
+  text-align: center;
+}
+#pig{
+ max-width: 10%;
+ opacity: 1;
 }
 
 
@@ -101,6 +136,7 @@ animation: load 3s infinite alternate ease-in-out;
   bottom: 0;
   right: 0;
 }
+
 /* PRELOADER CONFIG */
 .loader {
   display: inline-flex;
