@@ -96,7 +96,7 @@ animation: load 3s infinite alternate ease-in-out;
   display: none;
 }
 #ender{
-  max-width: 10%;
+  max-width: 20%;
   position: fixed;
   bottom: 0;
   right: 0;
