@@ -10,3 +10,9 @@ function showPage() {
   $(".content").fadeIn(3000);
   $("body").fadeIn(3000);
 }
+
+function loadPage(){
+  $("body").removeClass("preload");
+  $(".content").fadeIn(3000);
+  $("body").fadeIn(3000);
+}

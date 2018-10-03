@@ -7,6 +7,7 @@ overflow-y: hidden;
 body{
 background-image: url("background.png");
 background-repeat: no-repeat;
+font-family: Gill Sans, Gill Sans MT, Calibri,sans-serif;
 }
 
 #topLogo{
@@ -62,7 +63,6 @@ ul.topnav li.right {float: right;}
   align-items: center;
   display:flex;
 }
-
 #preloader.hidden {
   opacity: 0;
 }
@@ -95,7 +95,12 @@ animation: load 3s infinite alternate ease-in-out;
 .content {
   display: none;
 }
-
+#ender{
+  max-width: 10%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 /* PRELOADER CONFIG */
 .loader {
   display: inline-flex;
