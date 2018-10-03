@@ -13,6 +13,6 @@ function showPage() {
 
 function loadPage(){
   $("body").removeClass("preload");
-  $(".content").fadeIn(3000);
-  $("body").fadeIn(3000);
+  $(".content").fadeIn(1000);
+  $("body").fadeIn(1500);
 }

@@ -3,16 +3,16 @@ html, body {
 }
 
 body{
-background: url("background.png") no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-font-family: Gill Sans, Gill Sans MT, Calibri,sans-serif;
+  background: url("background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
 }
 
 #topLogo{
-max-width: 25%;
+  max-width: 25%;
 }
 
 /* Navigation Bar */
@@ -36,7 +36,8 @@ ul.topnav {
 }
 ul.topnav li {
   display: inline-block;
-text-align:center;
+  text-align:center;
+  font-weight: bolder;
 }
 ul.topnav li a {
     display: block;
@@ -66,12 +67,12 @@ ul.topnav li.right {float: right;}
 #team{
   max-width: 30%;
 }
+
 /* Skin Changer Page */
 #skinchange{
   background-color: black;
   opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
+  border: 2.2px solid #42f4dc;
   margin:auto;
   width: 60%;
   text-align: center;
@@ -81,12 +82,12 @@ ul.topnav li.right {float: right;}
 #aerocheck{
   background-color: black;
   opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
+  border: 2.2px solid #42f4dc;
   margin:auto;
   width: 60%;
   text-align: center;
 }
+
 /* Contact Page */
 #contact{
   background-color: black;
@@ -105,6 +106,7 @@ ul.topnav li.right {float: right;}
   color:white;
   opacity: 1;
 }
+
 /* Terms Page */
 #terms{
   background-color: black;
@@ -119,15 +121,14 @@ ul.topnav li.right {float: right;}
  max-width: 10%;
  opacity: 1;
 }
-
 #team {
     transition:transform 0.25s ease;
 }
-
 #team:hover {
     -webkit-transform:scale(2.5); /* or some other value */
     transform:scale(2.5);
 }
+
 /* PRELOADER FADE */
 .preload {
   background: radial-gradient(white, #efe1bf);
@@ -141,7 +142,7 @@ ul.topnav li.right {float: right;}
 }
 #preloader::before,
 #preloader::after {
-animation: load 3s infinite alternate ease-in-out;
+  animation: load 3s infinite alternate ease-in-out;
 }
 #preloader::before {
   top: 0;

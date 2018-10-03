@@ -7,7 +7,7 @@ overflow-y: hidden;
 body{
 background-image: url("background.png");
 background-repeat: no-repeat;
-font-family: Gill Sans, Gill Sans MT, Calibri,sans-serif;
+font-family: 'Raleway', sans-serif;
 }
 
 #topLogo{
@@ -35,7 +35,8 @@ ul.topnav {
 }
 ul.topnav li {
   display: inline-block;
-text-align:center;
+  text-align:center;
+  font-weight: bolder;
 }
 ul.topnav li a {
     display: block;
@@ -56,8 +57,7 @@ ul.topnav li.right {float: right;}
 #welcome{
   background-color: black;
   opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
+  border: 2.2px solid #42f4dc;
   margin:auto;
   width: 60%;
   text-align: center;
@@ -65,25 +65,14 @@ ul.topnav li.right {float: right;}
 #team{
   max-width: 30%;
 }
-/* Skin Changer Page */
-#skinchange{
-  background-color: black;
-  opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
-  margin:auto;
-  width: 60%;
-  text-align: center;
-}
 
-/* AeroChecker Page */
+/* Skin Change and AeroChecker styling in scrollingStyles.css */
 
 /* Contact Page */
 #contact{
   background-color: black;
   opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
+  border: 2.2px solid #42f4dc;
   margin:auto;
   width: 60%;
   text-align: center;
@@ -96,12 +85,12 @@ ul.topnav li.right {float: right;}
   color:white;
   opacity: 1;
 }
+
 /* Terms Page */
 #terms{
   background-color: black;
   opacity: .8;
-  border-top: 2.2px solid black;
-  border-bottom: 2.2px solid black;
+  border: 2.2px solid #42f4dc;
   margin:auto;
   width: 60%;
   text-align: center;
